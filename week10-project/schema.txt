@@ -1,0 +1,30 @@
+CREATE TABLE users (
+    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username varchar(200) NOT NULL UNIQUE,
+    hash TEXT NOT NULL
+);
+
+CREATE TABLE dreams (
+    dream_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    description TEXT,
+    dream_date DATE,
+    lucid BOOLEAN,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+CREATE TABLE categories (
+    cat_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cat_name VARCHAR(200),
+    user_id INTEGER NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+
+);
+
+CREATE TABLE dreams_categories (
+    info_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    dream_id INTEGER NOT NULL,
+    cat_id INTEGER NOT NULL,
+    FOREIGN KEY (dream_id) REFERENCES dreams(dream_id),
+    FOREIGN KEY (cat_id) REFERENCES categories(cat_id)
+);

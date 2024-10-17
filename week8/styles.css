@@ -1,0 +1,94 @@
+:root {
+  --main-color: #440463;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: 'Verdana';
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 2% auto;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+.footer a,
+.navbar a,
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover,
+.footer a:hover,
+.navbar a:hover {
+  font-weight: bold;
+  color: #7005a3;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.info,
+.info:active,
+.btn-outline-primary.info:hover,
+.btn-outline-primary:active,
+.btn-outline-primary.info:active,
+.btn-primary,
+.btn-primary.info:active,
+.btn-primary:hover,
+.btn-primary:active {
+  color: #fff;
+  background-color: var(--main-color);
+  border-color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  color: var(--main-color);
+  background-color: #fff;
+  border-color: var(--main-color);
+}
+
+input {
+  margin-bottom: 12px;
+}
+
+textarea {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.form {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.star-oracle {
+  width: 480px;
+  height: auto;
+}

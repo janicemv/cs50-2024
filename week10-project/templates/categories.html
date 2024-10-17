@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Categories
+{% endblock %}
+
+{% block main %}
+
+    <form action="/categories" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="category" placeholder="New category">
+        </div>
+        <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-primary" type="submit">Add Category</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <div class="row row-cols-1">
+        <h2>Your Categories</h2>
+
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Category</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for cat_name in categories %}
+              <tr>
+                <th scope="row">{{ cat_id }}</th>
+                <td>{{ cat_name }}</td>
+                <td><form method="post" style="display: inline;">
+                    <input type="hidden" name="cat_id" value="{{ cat_name["cat_id"] }}">
+                    <button class="btn btn-primary btn-sm me-1" type="submit" disabled>Edit</button>
+                </form></td>
+                <td><form method="post" style="display: inline;">
+                    <input type="hidden" name="cat_id" value="{{ cat_name["cat_id"] }}">
+                    <button class="btn btn-danger btn-sm" type="submit" disabled>Delete</button>
+                </form></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+
+    </div>
+
+{% endblock %}

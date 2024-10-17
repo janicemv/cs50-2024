@@ -1,0 +1,25 @@
+Background: #161C40
+Titles: #48468C
+Categories: #F294A5
+
+/* Color Theme Swatches in Hex */
+.Exploring-this-great-world-.-Mixed-media-1-hex { color: #F294A5; }
+.Exploring-this-great-world-.-Mixed-media-2-hex { color: #735A8C; }
+.Exploring-this-great-world-.-Mixed-media-3-hex { color: #48468C; }
+.Exploring-this-great-world-.-Mixed-media-4-hex { color: #161C40; }
+.Exploring-this-great-world-.-Mixed-media-5-hex { color: #F2F0CE; }
+
+/* Color Theme Swatches in RGBA */
+.Exploring-this-great-world-.-Mixed-media-1-rgba { color: rgba(242, 147, 165, 1); }
+.Exploring-this-great-world-.-Mixed-media-2-rgba { color: rgba(115, 89, 140, 1); }
+.Exploring-this-great-world-.-Mixed-media-3-rgba { color: rgba(72, 70, 140, 1); }
+.Exploring-this-great-world-.-Mixed-media-4-rgba { color: rgba(21, 27, 63, 1); }
+.Exploring-this-great-world-.-Mixed-media-5-rgba { color: rgba(242, 239, 205, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Exploring-this-great-world-.-Mixed-media-1-hsla { color: hsla(348, 78, 76, 1); }
+.Exploring-this-great-world-.-Mixed-media-2-hsla { color: hsla(270, 21, 45, 1); }
+.Exploring-this-great-world-.-Mixed-media-3-hsla { color: hsla(241, 33, 41, 1); }
+.Exploring-this-great-world-.-Mixed-media-4-hsla { color: hsla(230, 49, 16, 1); }
+.Exploring-this-great-world-.-Mixed-media-5-hsla { color: hsla(56, 58, 87, 1); }
+

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book of Dreams
+{% endblock %}
+
+{% block main %}
+    <div class="row row-cols-1">
+        {% for row in dreams %}
+        <h2> <img
+            src="https://cdn-icons-png.flaticon.com/512/1753/1753149.png" alt="Dreamcatcher icons created by Flat Icons - Flaticon" width="30px">Your Dream from {{ row["formatted_date"] }}</h2>
+        <h3>Category: {{ row["cat_name"] }} </h3>
+        <p>{{ row["description"] }}</p>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

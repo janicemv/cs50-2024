@@ -1,0 +1,80 @@
+Specifications - Week 8 Project for CS50 - Adhara Starpath Website
+
+---
+
+This website was created with the support from:
+
+- My previous knowledge on HTML and CSS
+- The HTML and CSS lessons of CodeCademy - https://www.codecademy.com/learn/learn-html | https://www.codecademy.com/learn/learn-css
+- Bootstrap documentation - https://getbootstrap.com/docs/5.3/components
+- Images created by me on Canva - https://www.canva.com/
+- Javascript tutorials and documentation - https://www.w3schools.com/jsref/default.asp
+- ChatGPT to check for my coding mistakes when I could not find them; final check on HTML markups
+
+---
+
+Responsive website tag (Bootstrap):
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+Bootstrap CSS:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+---
+
+Tags used:
+
+head
+body
+section
+header
+main
+footer
+div
+hr
+h1
+h2
+h3
+p
+button
+ul
+li
+a
+script
+form
+label
+input
+textarea
+br
+
+
+CSS properties used:
+
+width
+margin
+height
+background-color
+border-radius
+border-color
+color
+font-family
+font-size
+font-style
+font-weight
+text-decoration
+text-transform
+text-align
+display
+
+I used Bootstrap (BS) to:
+
+- Make a responsive website
+- Create a nice-looking, responsive menu
+- Manage the containers and spaces for the contents of my pages
+- Create a good-looking footer
+- Add styles to my buttons and set their positions
+
+I used Javascript to:
+
+- Enable toggle navbar button (with BS JavaScript)
+- Generate a function for selecting random images for my Stellar Oracle
+- Generate alert in the submit button from the Contact form

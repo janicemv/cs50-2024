@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    New Dream
+{% endblock %}
+
+{% block main %}
+    <div class="row row-cols-1">
+
+        <form action="/newdream" method="post">
+            <section class="reference form">
+                <div class="mb-3">
+                    <p>Category: </p>
+                    <select name="category">
+                        {% for category in categories %}
+                        <option value="{{ category }}">{{ category }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <input id="lucid" name="lucid" type="checkbox" value="lucid">
+              <label for="cs50">Lucid dream</label>
+            </section>
+
+            <section class="text form">
+              <label for="message">Describe your dream:</label>
+              <br>
+              <textarea id="description" name="description" placeholder="Write all that you remember" rows="5"
+                cols="30"></textarea>
+            </section>
+
+            <button type="submit" class="btn btn-primary info mx-auto">Save</button>
+          </form>
+
+    </div>
+
+{% endblock %}
